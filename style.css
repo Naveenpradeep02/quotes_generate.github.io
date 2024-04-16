@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color: #336c92;
+}
+.container{
+    background-color: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px ;
+}
+.container h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.container h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    background-color: #019f55;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container blockquote{
+    min-height: 110px;
+    font-size: 26px;
+}
+.container blockquote::selection{
+    background-color: #336c92;
+    
+}
+.container blockquote::after , 
+.container blockquote::before{
+    content: '"';
+}
+.container span{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    text-transform: capitalize;
+    position: relative;
+}
+.container span::before{
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: -25px;
+}
+.btnbox{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnbox button{
+    background-color: #336c92;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid #336c92;
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.btnbox .btn2{
+    background-color: rgba(0, 0, 0, 0);
+    color: #336c92;
+    font-weight: 700;
+}
+@media only screen and (max-width:700px){
+    .container{
+        max-width: 300px;
+    }
+}
